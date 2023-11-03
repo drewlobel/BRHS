@@ -1,5 +1,31 @@
 <html>
 	<head>
+var SECRET = "123";
+
+function start(){
+    while (true){
+        
+        var password = readLine("Enter password: ");
+        
+        if (password == SECRET){
+            
+            var ACCESS_CODE = (12345);
+            println("Access Code: ");
+            println("You have been told an access code. Enter the access code to gain entry.");
+            
+            while (true){
+                var accessCode = readLine("Enter access code: ");
+                if (accessCode == ACCESS_CODE){
+                    break;
+                }
+                println("Sorry, that did not match. Please try again.");
+            }
+            break;
+        }
+        println("Sorry, that did not match. Please try again.");
+    }
+
+    println("You have logged in!");
 		
 <script>
 window.onbeforeunload = function (e) {
